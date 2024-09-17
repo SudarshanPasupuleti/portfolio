@@ -49,23 +49,24 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Designing</span><br>Designing Logos and Posters</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>Web Development</span><br>Web site Development Basics</li>
+                            <li><span>App Design</span><br>App Design for Android</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
-                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
-                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
-                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                            <li><span>2024-Present</span><br>Python developer.</li>
+                            <li><span>2024-January</span><br>java intern at vaultofcodes.</li>
+                            <li><span>2022-Present</span><br>Designing logos,certificates,Banners.</li>
+                            <li><span>2023-December</span><br>VFX by using Blender.</li>
+                            <li><span>2023-march</span><br>Animation by using Adobe Photoshop.</li>  
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
-                            <li><span>2016</span><br>MBA from MIT Bangalore.</li>
-                            <li><span>2014</span><br>BBA from ISM Bangalore.</li>
+                            <li><span>2022-2026</span><br> B.tech-siddartha institute of science and technology puttur.</li>
+                            <li><span>2020-2022</span><br>Intermediate-Gurudeva vasista jr.college kodur.</li>
+                            <li><span>2019-2020</span><br>SSC-ZPHS VPR KANDRIKA.</li>
                         </ul>
                     </div>
                 </div>
@@ -151,6 +152,32 @@
     </div>
 </div>
 </div>
+
+<script>
+    // JavaScript for Tab Functionality
+function opentab(tabName) {
+    // Get all elements with the class 'tab-contents' and hide them
+    var tabContents = document.getElementsByClassName("tab-contents");
+    for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = "none";
+        tabContents[i].style.opacity = "0";
+    }
+
+    // Get all elements with the class 'tab-links' and remove 'active-link' class
+    var tabLinks = document.getElementsByClassName("tab-links");
+    for (var i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove("active-link");
+    }
+
+    // Show the current tab, add the 'active-link' class to the clicked tab
+    document.getElementById(tabName).style.display = "block";
+    setTimeout(function () {
+        document.getElementById(tabName).style.opacity = "1";
+    }, 100); // Delay to allow transition effect
+    event.currentTarget.classList.add("active-link");
+}
+
+</script>
    
 </body>
 
