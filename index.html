@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sudarshan's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -23,7 +24,7 @@
             </nav>
             <div class="header-text">
                 <img class="logo" src="./logo.jpg" alt="Sudarshan Pasupuleti">
-                <p>Python developer & Designer </p>
+                <p>Python Developer & Designer </p>
                 <h1>Hi, I'm <br><span class="red">sudarshan pasupuleti</span></h1>
             </div>
         </div>
@@ -56,15 +57,17 @@
                         <ul>
                             <li><span>2024-Present</span><br>Python developer.</li>
                             <li><span>2024-January</span><br>java intern at vaultofcodes.</li>
-                            <li><span>2023-march</span><br>Animation by using Adobe Photoshops.</li>
+                            <li><span>2023-march</span><br>Animation by using Adobe Photoshop.</li>
                             <li><span>2023-December</span><br>VFX by using Blender.</li>
-                            <li><span>2022-present</span><br>Designing logos,posters,templetes,etc.</li>  
+                            <li><span>2022-present</span><br>Designing logos,posters,templetes,etc.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2022-2026</span><br> B.tech-siddartha institute of science and technology puttur.</li>
-                            <li><span>2020-2022</span><br>Intermediate-Gurudeva vasista jr.college kodur.</li>
+                            <li><span>2022-2026</span><br> B.tech-CSE(AI/ML)siddartha institute of science and
+                                technology puttur.</li>
+                            <li><span>2020-2022</span><br>Intermediate(MPC)-Gurudeva vasista jnr.college Rlywaykodur.
+                            </li>
                             <li><span>2019-2020</span><br>SSC-ZPHS VPR KANDRIKA.</li>
                         </ul>
                     </div>
@@ -101,64 +104,76 @@
             </div>
         </div>
     </div>
-<!-- Contact Section -->
-<div id="contact" class="section">
-<div class="contact-section">
-    <div class="6305575781">
-        <h1 class="sub-title">Get In Touch</h1>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/s_i_d_d_u_r_o_y_a_l__7?igsh=dGFiM2Z3aDJ1bzE0" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://github.com/SudarshanPasupuleti" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/sudarshan-pasupuleti-5a37b4296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <div class="contact-section">
+            <div class="contact-details">
+                <h1 class="sub-title">Get In Touch</h1>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/s_i_d_d_u_r_o_y_a_l__7?igsh=dGFiM2Z3aDJ1bzE0" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/SudarshanPasupuleti" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sudarshan-pasupuleti-5a37b4296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:sudarshansudarshan8889@gmail.com" target="_blank">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    <a href="tel:6305575781" target="_blank">
+                        <i class="fa fa-phone"></i>
+                    </a>
+                    <a href="https://wa.me/916305575781" target="_blank">
+                        <i class="fa fa-whatsapp" aria-hidden="false"></i>
+                    </a>
+                </div>
+                <a href="Resume.pdf" download>
+                    <button type="button">Download Resume</button>
+                </a>
+            </div>
+            <div class="contact-form">
+                <h1 class="sub-title">Contact Me</h1>
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </div>
-        <a href="Resume.pdf" download>
-            <button type="button">Download Resume</button>
-        </a>
     </div>
-    <div class="contact-form">
-        <h1 class="sub-title">Contact Me</h1>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-</div>
-</div>
+    <script>
+        feather.replace();
+    </script>
+    <script>
+        // JavaScript for Tab Functionality
+        function opentab(tabName) {
+            // Get all elements with the class 'tab-contents' and hide them
+            var tabContents = document.getElementsByClassName("tab-contents");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = "none";
+                tabContents[i].style.opacity = "0";
+            }
 
-<script>
-    // JavaScript for Tab Functionality
-function opentab(tabName) {
-    // Get all elements with the class 'tab-contents' and hide them
-    var tabContents = document.getElementsByClassName("tab-contents");
-    for (var i = 0; i < tabContents.length; i++) {
-        tabContents[i].style.display = "none";
-        tabContents[i].style.opacity = "0";
-    }
+            // Get all elements with the class 'tab-links' and remove 'active-link' class
+            var tabLinks = document.getElementsByClassName("tab-links");
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active-link");
+            }
 
-    // Get all elements with the class 'tab-links' and remove 'active-link' class
-    var tabLinks = document.getElementsByClassName("tab-links");
-    for (var i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].classList.remove("active-link");
-    }
+            // Show the current tab, add the 'active-link' class to the clicked tab
+            document.getElementById(tabName).style.display = "block";
+            setTimeout(function () {
+                document.getElementById(tabName).style.opacity = "1";
+            }, 100); // Delay to allow transition effect
+            event.currentTarget.classList.add("active-link");
+        }
 
-    // Show the current tab, add the 'active-link' class to the clicked tab
-    document.getElementById(tabName).style.display = "block";
-    setTimeout(function () {
-        document.getElementById(tabName).style.opacity = "1";
-    }, 100); // Delay to allow transition effect
-    event.currentTarget.classList.add("active-link");
-}
+    </script>
 
-</script>
-   
 </body>
 
 </html>

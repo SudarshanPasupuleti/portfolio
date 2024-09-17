@@ -142,6 +142,7 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 a .tab-links {
@@ -198,7 +199,7 @@ a .tab-links {
     font-weight: bold;
 }
 
-#skills span {
+#skills span,#education span,#experience span {
     color: #ff004f;
 }
 
@@ -351,6 +352,8 @@ footer p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 15vw;
+    min-width: max-content;
 }
 .contact-details button:hover {
     background-color: #ff0040;
